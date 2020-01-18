@@ -1,0 +1,6 @@
+Basic Collections
+
+1. list -> mutable sequence of value(uses [] square brackets)
+2. tuple -> Fixed set of values(uses () round brackets)
+3. set -> unordered Collection of distinct values(uses {} curly braces)
+4. dict -> unordered set of key value pairs and is also mutable.

@@ -1,0 +1,23 @@
+Python provides a set of methods that classes can use to control 
+how attributes are accessed on an object. 
+Whenever an object's attributes are retrieved or set, Python calls one 
+of these functions to give your class an opportunity to perform any 
+desired processing. The first two, getattribute and getattr, are called
+to retrieve an attribute value. Now these are slightly different from 
+each other, but it's important to know the difference. Getattr is 
+called only when the requested attribute can't be found on the object,
+while getattribute is called unconditionally every time an attribute
+name is requested. It's also called by Python when it goes to look up
+any methods on your class, so you need to be really careful with it.
+The setattr function is called when an attribute value is set on the 
+object. Delattr is called to delete an attribute and dir is called when 
+the dir function is used on the object. This is useful because it enables 
+a developer to dynamically discover the attributes your object 
+supports.
+
+Attribute Function                           Called When
+object.__getattribute__(self, attr)          object.attr
+object.__getattr__(self, attr)               object.attr
+object.__setattr__(self, attr, val)          object.attr = val
+object.__delattr__(self)                     del object.attr
+object.__dir__(self)                         dir(object)

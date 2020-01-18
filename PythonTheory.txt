@@ -1,0 +1,24 @@
+
+Truth Value In Python:
+In Python, any object can be tested for Boolean truth value.  
+In general, any object is considered to be equivalent to Boolean true,
+unless it's class defines a Bool method that returns false, 
+or has a len method that returns a zero length. 
+So, let's look first at the built-in objects that evaluate to false. 
+There are two constants which are defined to evaluate to false, 
+the false Boolean constant itself, of course, and the none constant, 
+which you may have seen represented in other languages as null. 
+Any of the built-in numeric types that evaluate to zero are also considered to be false. 
+For example, the integer value zero, the floating-point value 0.0, 
+and the complex value type of 0j are all false values.
+In addition, the decimal object, when given a value of zero,
+and the fractional object, when it has a numerator of zero, are also false. 
+Next are empty sets and sequences. And you can see the examples here. 
+The empty string and empty collection objects are all considered to be false. 
+In addition, if you call the built-in set function with no parameters, 
+or you create a range of zero, those are also considered to be Boolean false. 
+For custom objects, they are by default considered to be true, 
+unless they override the Bool function and return a false value, 
+or they override the len function and return a value of zero. 
+
+
